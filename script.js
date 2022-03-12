@@ -69,11 +69,17 @@ function changeClass(i, j) {
 
 }
 function liker(i, j) {
-    if (like[i * (j ** 2)].className == "fa-regular fa-thumbs-up") {
-        like[i * (j ** 2)].className = "fa-solid fa-thumbs-up"
+    
+    likest=like[i * (j ** 2)]
+    
+    if ( likest.className == "fa-regular fa-thumbs-up") {
+        likest.className = "fa-solid fa-thumbs-up"
+      
     }
     else {
-        like[i * (j ** 2)].className = "fa-regular fa-thumbs-up"
+        likest.className = "fa-regular fa-thumbs-up"
+      
+
     }
 }
 
